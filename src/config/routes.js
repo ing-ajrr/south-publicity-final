@@ -6,7 +6,15 @@ import Home from "../pages/Home";
 
 import Error404 from "../pages/Error404";
 
+//Landing
+import Plantilla1 from '../landing/Plantilla1';
+
 const routes= [  
+  {
+    path: "/register",
+    component: Plantilla1,
+    exact: true
+  },
   {
     path: "/",
     component: LayoutWeb,
@@ -16,7 +24,7 @@ const routes= [
         path: "/",
         component: Home,
         exact: true
-      },
+      },      
       {
         component: Error404
       }

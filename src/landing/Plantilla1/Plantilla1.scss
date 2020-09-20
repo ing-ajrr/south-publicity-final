@@ -1,0 +1,57 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.navbar{
+	background-color:#135E59;
+	font-size:1.2em;
+
+}
+.navbar .navbar-brand a {
+	color:#D5D5D5;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #D5D5D5;
+}
+#home {
+	background: url(https://scontent.fccp3-1.fna.fbcdn.net/v/t1.0-9/119845869_4001129356580336_7606767475815730830_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=VItdlNWdCqEAX-INdVJ&_nc_ht=scontent.fccp3-1.fna&oh=fc9c2e90ce580865097495d224edb195&oe=5F88585D)center center;
+	background-size: cover, cover, cover;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.landing-text h1, h3, h4 {
+	color: #FEFEFE;
+
+}
+.box{
+	padding-left: 100px;
+}
+
+footer{
+	width: 100%;
+	padding: 2.5% 5% 2.5% 2.5%;
+	background-color:#135E59;
+	color:#FFF;
+}
+input[type=text]{
+	padding: 4px;
+	border-radius: 4px;
+	border-color: #494949;
+	margin: 4px;
+	box-sizing: border-box;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #FFF;
+ 
+}
