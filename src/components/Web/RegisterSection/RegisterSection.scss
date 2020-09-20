@@ -1,0 +1,61 @@
+@import '../../../scss/variables';
+
+.register-section{
+  position: relative;
+  min-height: 280px;
+  /*background-color: #145649;*/
+  
+
+  &__picture {
+    position: relative;
+    top: -7vw;
+    left: 0;
+    width: 100vw;
+    &--img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:7;
+    &--info{
+      color: white;
+      padding: 30px 20%;
+      .container-info__button{
+        margin: auto 0;
+      }
+      h2, p, a {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      h2{
+        font-size: calc(27px + 1vw);
+        font-family: $font-primary;
+        font-weight: bold;
+      }
+      p{
+        font-size: calc(12px + 1vw);
+        font-family: $font-secundary;
+      }
+      a{
+        font-size: calc(17px + 1vw);
+        text-align: right;        
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .register-section{
+    &__container{
+      &--info{
+        a{
+          margin-left: 40px;
+        }
+      }
+    }
+  }  
+}

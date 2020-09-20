@@ -1,0 +1,171 @@
+@import "../../../scss/_variables.scss";
+
+.ant-layout {
+  &-header {
+    position: relative;
+    z-index: 5;
+    height: unset;
+    padding: 0;
+    line-height: unset;
+    .navbar-sm, .navbar-md {
+      position: relative;
+      z-index: 3;      
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: .5rem 1rem;          
+    }
+    .navbar-sm__brand, .navbar-md__brand {
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+    .navbar-sm__brand--img, .navbar-md__brand--img {
+      vertical-align: top!important;
+    }
+
+    .navbar-sm{
+      display: flex;
+      background-color: $primary-color;
+      &__brand {
+        display: inline-block;
+        &--title {
+          display: inline-block;
+          font-family: $font-primary, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 22px;
+          color: #ffffff;
+        }
+      }
+  
+      &__toggler {
+        padding: .25rem .75rem;
+        background-color: transparent;
+        border-radius: .25rem;
+        border: 1px solid rgba(255,255,255,.1);
+      }
+  
+      &__collapse {
+        padding-right: 30px;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        &--nav{
+          display: flex;
+          flex-direction: column;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+          .navbar-sm-collapse-nav__item{
+            &--link {
+              display: block;
+              padding: .5rem 1rem;
+              padding-right: 0;
+              padding-left: 0;
+              color: white;
+              text-align: center;
+              font-family: $font-primary;
+            }
+          }
+        }
+      }
+      &__collapse:not(.show){
+        display: none;
+      }
+    }
+    .navbar-md, .picture-1{
+      display: none;
+    }
+  }  
+}
+@media (min-width: 768px){
+  .ant-layout {
+    &-header{
+      .navbar-sm{
+        display: none;
+      }
+      .navbar-md {
+        display: flex;
+        background-color: $primary-color-dark;
+        padding: 0;
+        &__nav{
+          position: absolute;
+          display: flex!important;
+          flex-basis: auto;
+          top: 0;
+          right: 0;
+          height: 33%;
+          z-index: 2;    
+          &--box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            padding-right: 40px;
+            margin-bottom: 0;
+            list-style: none;
+            .navbar-md-nav__item--link{
+              display: block;
+              color: #ffffff;
+              padding: .5rem 1rem;
+              font-size: calc(8px + 1vw);
+              font-family: $font-primary;
+            }
+          }
+        }
+
+        .encabezado1 {
+          display: block;
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          &__img {
+            width: 100%;
+          }
+        }
+        &__brand {
+          display: block;
+          position: absolute;
+          width: 14vw;
+          top: 30%;
+          left: 4%;          
+          z-index: 2;
+          &--img{            
+            width: 100%;
+            height: auto;
+          }
+        }
+        &__title {
+          display: block;
+          position: absolute;
+          top: 30%;
+          left: 20%;
+          z-index: 2;
+          h1{
+            font-family: $font-primary,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: calc(1em + 5vw);
+            margin: 0;
+            color: #ffffff;
+          }
+        }
+      }
+      .picture-1 {
+        position: absolute;
+        display: block;
+        top: 3vw;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        &__img {
+          width: 100vw;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "../../scss/variables";
+
+.content-section-main {
+  position: relative;
+  width: 100%;
+  background-color: $primary-color-dark;  
+  //height: calc(100vh - 206px);
+  &__opacity {
+    position: absolute;
+    width: 100%;
+    height: 40vw;
+    min-height: 400px;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 102, 52, 0.8);
+    z-index: 0;
+  }
+
+  .ant-carousel .slick-dots li button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: $color-accent;
+    border: 0;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .ant-carousel .slick-dots li {
+    position: relative;
+    display: inline-block;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding: 0;
+    text-align: center;
+    text-indent: -999px;
+    vertical-align: top;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  } 
+  .ant-carousel .slick-dots li.slick-active {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ant-carousel .slick-dots li.slick-active button {
+    opacity: 1;
+  }
+
+  .ant-carousel .slick-dots-bottom {
+    top: 12px;
+    bottom: initial;
+  }
+  .ant-carousel {
+    
+    background-image: url('https://image.freepik.com/free-photo/colleagues-looking-charts_23-2147669775.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $primary-color-light;
+  }
+}
+
+@media (min-width: 768px){
+  .ant-carousel .slick-dots-bottom {
+    bottom: 12px!important;
+    top: unset !important;
+  }
+  .ant-carousel {
+    min-height: 400px;
+  }
+}
